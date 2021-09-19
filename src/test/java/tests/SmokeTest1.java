@@ -39,7 +39,7 @@ public class SmokeTest1 extends BaseTest {
 
         if (loginPage.getLanguagePulldown().getText().equals("language")) {
             Assert.assertEquals(loginPage.getErrorMessage().getText(),
-                    "The account name or password that you have entered is incorrect.");
+                    "Incorrect account name or password. Remember that your email address may not match your account name.");
         } else if (loginPage.getLanguagePulldown().getText().equals("язык")) {
             Assert.assertEquals(loginPage.getErrorMessage().getText(),
                     "Неверные имя аккаунта или пароль. Помните, что адрес электронной почты может не совпадать с именем аккаунта.");
